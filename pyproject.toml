@@ -1,0 +1,20 @@
+[project]
+name = "claude-whoop-coach"
+version = "0.1.0"
+description = "MCP server that turns Claude into a coach using your WHOOP recovery, sleep, strain and workout data"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Suheyb Isse" }]
+dependencies = ["mcp>=2.0", "httpx>=0.27"]
+
+[project.scripts]
+whoop-mcp = "whoop_mcp.server:main"
+whoop-mcp-auth = "whoop_mcp.auth:login"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/whoop_mcp"]
