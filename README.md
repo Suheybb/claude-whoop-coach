@@ -8,6 +8,21 @@ An [MCP](https://modelcontextprotocol.io) server that connects your **WHOOP** da
 
 Built on the official **WHOOP Developer API v2** (OAuth 2.0, read-only).
 
+## Why I'm building this
+
+A hobby project: I wear a WHOOP and wanted an AI coach that uses *my* numbers instead of generic advice. It's also my hands-on way to learn cloud engineering — I'm taking it from a local Python script all the way to a secure deployment in Azure, one step at a time.
+
+## Roadmap
+
+- [x] MCP server with recovery, sleep, strain and workout tools
+- [x] Read-only OAuth 2.0 with automatic token refresh
+- [x] Running locally with Claude Code
+- [ ] Serve over HTTP so it works from the Claude mobile app
+- [ ] Containerize with Docker
+- [ ] Provision Azure infrastructure with Terraform (Container Apps, Key Vault, managed identity)
+- [ ] CI/CD with GitHub Actions
+- [ ] Authentication in front of the server, so only I can read my health data
+
 ## Tools
 
 | Tool | What it returns |
